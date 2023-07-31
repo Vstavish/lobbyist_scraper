@@ -66,7 +66,7 @@ for link in links:
     ul_elements = soup.find_all('ul', class_='horizontal')
     ul_texts = [ul.get_text(strip=True) for ul in ul_elements]
 
-# and here I'm appending some of the text I've pulld together
+# and here I'm appending some of the text I've pulled together
 
     combined_data = [specific_text] + ul_texts
     for table in tables:
